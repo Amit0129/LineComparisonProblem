@@ -39,11 +39,11 @@
             double secondLineLength = linelength.GetLineLength(x3, y3, x4, y4);
             Console.WriteLine($"{firstLineLength}    {secondLineLength}");
 
-            if (firstLineLength == secondLineLength)
+            if (firstLineLength.Equals(secondLineLength))
             {
                 Console.WriteLine("The line length are equal");
             }
-            else if (firstLineLength > secondLineLength)
+            else if (firstLineLength.CompareTo(secondLineLength) > 0)
             {
                 Console.WriteLine("First line is greater than Second line");
             }
